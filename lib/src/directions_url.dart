@@ -182,6 +182,7 @@ String getMapDirectionsUrl({
             'lat_via_$i': '${waypoints?[i].latitude}',
             'lon_via_$i': '${waypoints?[i].longitude}',
           },
+          ...(extraParams ?? {}),
         },
       );
 
